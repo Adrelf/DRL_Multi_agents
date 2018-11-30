@@ -40,5 +40,8 @@ Environment is solved in 1421 episodes.
 ![alt text](https://github.com/Adrelf/DRL_Multi_agents/blob/master/images/training_performance.png)
 
 # Future improvements
-  - MADDPG algorithm: Multi-agent Actor-Critic for Mixed Cooperatie-Competitive Environments ==> https://arxiv.org/pdf/1706.02275.pdf
-  - D4PG algorithm: Distributed Distributional Deterministic Policy Gradients ==> https://arxiv.org/pdf/1804.08617.pdf
+  - MADDPG algorithm: Multi-agent Actor-Critic for Mixed Cooperatie-Competitive Environments ==> https://arxiv.org/pdf/1706.02275.pdf <br/>
+  They use a centralized critic for each agent. There is communication between agents. In our context, we can also provide a global state containing the state of each agent in input of critic and action networks. We can also implement a shared memory with PER to speed-up the training phase.
+  - D4PG algorithm: Distributed Distributional Deterministic Policy Gradients ==> https://arxiv.org/pdf/1804.08617.pdf <br/>
+  They use a distributional critic update and a distributed parallel actors to speed-up the training phase. Like Rainbow algorithm, they use N-step returns and PER.
+  
