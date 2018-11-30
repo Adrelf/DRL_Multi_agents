@@ -9,17 +9,13 @@ The deep reinforcement learning algorithm is based on actor-critic method (DDPG)
 # The Environment 
 The environment is determinist.
 
- + State:<br/> 
-   The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation.
+ + State: the observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation.
+
+ + Actions: two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
    
- + Actions:<br/>  
-   Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
+ + Reward strategy: if an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.
    
- + Reward strategy:<br/>
-   If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.
-   
- + Solved Requirements:<br/>
-   Need an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). 
+ + Solved Requirements: need an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). 
 
 # Algorithm
 DDPG (Deep Deterministic Policy Gradient) is an hybrid method: Actor Critic. We use two neural networks:
