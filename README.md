@@ -65,10 +65,10 @@ LR_ACTOR | 1e-4 | learning rate of the actor
 LR_CRITIC | 3e-4 | learning rate of the critic
 WEIGHT_DECAY | 0.0001 | L2 weight decay
 UPDATE_EVERY | 1 | how often to update the network
-fc1_units | 128 | Number of nodes in first hidden layer for actor
-fc2_units | 56 | Number of nodes in second hidden layer for actor
-fc1_units |256 | Number of nodes in first hidden layer for critic
-fc2_units | 128 | Number of nodes in second hidden layer for critic
+fc1_units | 128 | number of nodes in first hidden layer for actor
+fc2_units | 56 | number of nodes in second hidden layer for actor
+fc1_units |256 | number of nodes in first hidden layer for critic
+fc2_units | 128 | number of nodes in second hidden layer for critic
 
  * To assess the performance of agents, please use the following command:
   ```
