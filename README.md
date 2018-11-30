@@ -12,7 +12,7 @@ The environment is determinist.
  + State:<br/> 
    The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation.
    
- + Actions: 
+ + Actions:<br/>  
    Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping.
    
  + Reward strategy:<br/>
